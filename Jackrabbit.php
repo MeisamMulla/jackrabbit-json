@@ -58,13 +58,13 @@ class Jackrabbit
         return json_decode(file_get_contents($filename));
     }
 
-    private function storeJSON($url)
+    private function storeJSON(string $url) : array
     {
         $classes = json_decode(file_get_contents($url));
         $newArray = [];
 
         if (!$classes->success) {
-            throw new Exception('Invalid record set');
+            throw new \Exception('Invalid record set');
         }
 
         foreach ($classes->rows as $class) {
@@ -112,7 +112,7 @@ class Jackrabbit
         return $years;
     }
 
-    private function getDays(stdClass $days) : string
+    private function getDays(\stdClass $days) : string
     {
         foreach ($days as $key => $value) {
             if ($value) {
