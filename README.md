@@ -7,7 +7,7 @@ Initialize the class by passing the Organization ID as a parameter in the constr
 $jr = new MeisamMulla\Jackrabbit('123456');
 ```
 
-Then use the `query()` method to get the resuts of your requests. The method accepts an array of parameters which can be found in the [JackRabbit documentation](http://jackrabbitcarehelp.com/guide2/default.aspx?pageid=add-columns).
+Then use the `query()` method to get the resuts of your requests. The method accepts an array of parameters which can be found in the [JackRabbit documentation](http://jackrabbitcarehelp.com/guide2/default.aspx?pageid=filtering-grouping).
 
 As an example:
 ```php
