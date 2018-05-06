@@ -7,7 +7,7 @@ Initialize the class by passing the Organization ID as a parameter in the constr
 $jr = new MeisamMulla\Jackrabbit('123456');
 ```
 
-Then use the `query()` method to get the resuts of your requests. The method accepts an array of parameters and those parameters can be found in the [JackRabbit documentation](http://jackrabbitcarehelp.com/guide2/default.aspx?pageid=add-columns).
+Then use the `query()` method to get the resuts of your requests. The method accepts an array of parameters which can be found in the [JackRabbit documentation](http://jackrabbitcarehelp.com/guide2/default.aspx?pageid=add-columns).
 
 As an example:
 ```php
@@ -30,7 +30,6 @@ Will return an output similar to this one:
         "location":"Studio Location",
         "ages":"5 - 16",
         "day":"Friday",
-        /* The link will be empty if Allow Registration is set to No inside JackRabbit portal */
         "link":"https:\/\/app.jackrabbitclass.com\/reg.asp?id=123456&amp;hc=&amp;initEmpty=&amp;hdrColor=&amp;WL=0&amp;preLoadClassID=000000&amp;loc=",
         "openings":0,
         "times":"9:00am-9:45am",
