@@ -14,6 +14,6 @@ try {
         echo $row->name . "\n";
     }
 
-} catch(Exception $e) {
-    echo $e;
+} catch (Exception $e) {
+    echo $e->getMessage();
 }
